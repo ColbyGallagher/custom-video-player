@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  background-color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 50;
+}
+
+h1 {
+  color: white;
+}
+
+.screen {
+  cursor: pointer;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.685) !important;
+}
+
+.controls {
+  background: #333;
+  color: #fff;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.685) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #28a745;
+}
+
+.controls .fa-stop {
+  color: #dc3545;
+}
+
+.controls .fa-pause {
+  color: #fff;
+}
+
+.controls .timestamp {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+@media (max-width: 1000px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
